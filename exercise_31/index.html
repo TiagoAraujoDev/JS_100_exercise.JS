@@ -5,9 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JoKenPo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>JoKenPo</h1>
+    <main>
+      <header>
+        <h1>JoKenPo</h1>
+      </header>
+      <section class="playGround">
+        <div class="enemyOption"></div>
+        <div class="playerOptions">
+          <div class="rock">rock</div>
+          <div class="papper">papper</div>
+          <div class="scissor">scissor</div>
+        </div>
+      </section>
+      <section class="score">
+        <h2>Score</h2>
+        <p><span id="playerScore"></span>X<span id="enemyScore"></span></p>
+        <h2>Last Score</h2>
+        <p id="lastScore"></p>
+      </section>
+      <section class="lastPlay">
+        <h2>Last Play</h2>
+        <div id="enemyLastPlay"></div>
+        <p>against</p>
+        <div id="playerLastPlay"></div>
+      </section>
+    </main>
+    <section class="buttons">
+      <button id="playButton">Play</button>
+      <button id="resetPlayButton">Reset Play</button>
+      <button id="newMatchButton">New Match</button>
+    </section>
+    <footer>
+      <address>Made by Tiago Araujo</address>
+      <div class="socialLinks"></div>
+    </footer>
     <script src="./exercise_31.js"></script>
   </body>
 </html>

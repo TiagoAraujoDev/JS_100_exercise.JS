@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'VT323', monospace;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  height: 80vh;
+  display: grid;
+  grid-template-areas:
+    'A A A'
+    'B C D';
+  grid-template-columns: 15vw 1fr 15vw;
+  gap: 1rem;
+}
+
+header {
+  height: 10vh;
+  grid-area: A;
+  background-color: gray;
+}
+
+header h1 {
+  text-align: center;
+  padding-top: 0.5rem;
+  font-size: 3rem;
+}
+
+section.playGround {
+  height: 65vh;
+  grid-area: C;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7rem;
+}
+
+section.playGround .enemyOption {
+  width: 10rem;
+  height: 10rem;
+  background-color: black;
+  margin-top: 1rem;
+}
+
+section.playGround .playerOptions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding-bottom: 0.5rem;
+}
+
+section.playGround .playerOptions .rock {
+  width: 8rem;
+  height: 8rem;
+  background-color: lightgreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.playGround .playerOptions .papper {
+  width: 8rem;
+  height: 8rem;
+  background-color: lightgreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.playGround .playerOptions .scissor {
+  width: 8rem;
+  height: 8rem;
+  background-color: lightgreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.score {
+  height: 65vh;
+  grid-area: B;
+  background-color: blueviolet;
+}
+section.lastPlay {
+  height: 65vh;
+  grid-area: D;
+  background-color: brown;
+}
+section.buttons {
+  height: 10vh;
+  width: 40%;
+  margin-inline: auto auto;
+  background-color: gray;
+}
+footer {
+  height: 10vh;
+  width: 100%;
+  background-color: blue;
+}
